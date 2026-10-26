@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spice Garden | Authentic Indian Cuisine</title>
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="/blocks/menu/menu.css">
+  <link rel="stylesheet" href="/blocks/reservation/reservation.css">
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; color: #33241d; }
+    .site-header { padding: 22px 7%; background: #70351b; color: white; display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .site-header h1 { margin: 0; }
+    .site-header a { color: white; margin-left: 18px; text-decoration: none; }
+    .hero { padding: 85px 7%; text-align: center; background: #fff2e3; }
+    .hero h2 { font-size: clamp(2.2rem, 5vw, 4rem); margin: 10px 0; color: #70351b; }
+    .hero p { max-width: 650px; margin: 15px auto 25px; line-height: 1.7; }
+    .hero a, .hero button { display: inline-block; background: #a34c20; color: white; padding: 13px 22px; border: 0; border-radius: 6px; text-decoration: none; cursor: pointer; }
+    .demo-block { max-width: 1100px; margin: auto; padding: 40px 24px; }
+    .site-footer { padding: 25px; background: #33241d; color: white; text-align: center; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Spice Garden</h1>
+    <nav aria-label="Main navigation">
+      <a href="#menu">Our Menu</a>
+      <a href="#reservation">Reserve a Table</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p>AUTHENTIC INDIAN CUISINE</p>
+      <h2>A Taste of India, Made with Love</h2>
+      <p>Discover fragrant biryanis, sizzling paneer tikka, and comforting curries made with traditional spices and fresh ingredients.</p>
+      <a href="#menu">Explore Our Menu</a>
+    </section>
+
+    <section id="menu" class="demo-block">
+      <div class="menu"></div>
+    </section>
+
+    <section id="reservation" class="demo-block">
+      <div class="reservation"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Spice Garden · Fresh flavours, warm hospitality.</p>
+    <p>Demo website — reservation requests are not sent to a restaurant.</p>
+  </footer>
+
+  <script type="module">
+    import decorateMenu from '/blocks/menu/menu.js';
+    import decorateReservation from '/blocks/reservation/reservation.js';
+
+    decorateMenu(document.querySelector('.menu'));
+    decorateReservation(document.querySelector('.reservation'));
+  </script>
+</body>
+</html>

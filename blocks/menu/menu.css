@@ -1,0 +1,33 @@
+
+.menu-card__read-more {
+  display: inline-block;
+  margin: 4px 20px 12px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #a34c20;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  cursor: pointer;
+}
+
+.menu-card__read-more:hover {
+  color: #70351b;
+}
+
+.menu-card__read-more:focus-visible {
+  outline: 2px solid #a34c20;
+  outline-offset: 4px;
+}
+
+.menu-card__extra {
+  margin: 0 20px 16px;
+  line-height: 1.7;
+  color: #59483e;
+}
+
+.menu-card__extra[hidden] {
+  display: none;
+}
